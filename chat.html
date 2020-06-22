@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
     />
+    <link rel="stylesheet" href="css\style.css" />
     <title>Chat | Kakao clone</title>
   </head>
   <body>
@@ -25,20 +26,17 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-          <a href="index.html">
-          <i class="fas fa-arrow-left fa-2x">
-          </i>
-          <a>
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left"> </i>
+        </a>
         <h1 class="header__title">Chat</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
-        <div class="header__icon">
-            <i class="fas fa-bars"></i>
-        </div>
-          </a>
+        <span class="header__icon">
+          <i class="fas fa-bars"></i>
         </span>
       </div>
     </header>
@@ -48,7 +46,13 @@
           Saturyday,June 20,2020
         </span>
         <li class="incoming-meassage meassage">
-          <img width="90" height="108"src="http://blogfiles.naver.net/MjAxODAxMjlfMjgw/MDAxNTE3MjM0Njc4MzM3.PhScEKNRieF2Q1Yzcyp3ImXUCP9EvzYAgmtg9CBlPu8g.DrD3__7d1qik_Pcv0b7FO1dmrgRF1UhPJfqtgwY7JFIg.JPEG.weezerpixies/IMG_0307.JPG" alt="" class="g-avatar message-avatar">
+          <img
+            width="90"
+            height="108"
+            src="http://blogfiles.naver.net/MjAxODAxMjlfMjgw/MDAxNTE3MjM0Njc4MzM3.PhScEKNRieF2Q1Yzcyp3ImXUCP9EvzYAgmtg9CBlPu8g.DrD3__7d1qik_Pcv0b7FO1dmrgRF1UhPJfqtgwY7JFIg.JPEG.weezerpixies/IMG_0307.JPG"
+            alt=""
+            class="g-avatar message-avatar"
+          />
           <span class="message__author">
             보령이
           </span>
@@ -59,22 +63,25 @@
             14:35
           </span>
           <div class="message__content"></div>
-          </li>
-          <li class="outcoming-meassage meassage">
-            <span class="my__message__timestamp">14:37</span>
-            <div class="message_content"> 
+        </li>
+        <li class="outcoming-meassage meassage">
+          <span class="my__message__timestamp">14:37</span>
+          <div class="message_content">
             <span class="my__message__bubble">그냥 누워있지</span>
-            </div>
-          </li>
-    
-        </ul>
+          </div>
+        </li>
+      </ul>
     </main>
     <div class="chat__write">
       <div class="chat__write-column">
         <i class="far fa-plus-square"></i>
       </div>
       <div class="chat__write-column">
-        <input type="text" placeholder="Send Message" class="chat__write-input">
+        <input
+          type="text"
+          placeholder="Send Message"
+          class="chat__write-input"
+        />
       </div>
       <div class="chat__write-column">
         <span class="chat__write-icon">
